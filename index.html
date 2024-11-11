@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Professional Profile Submission</h1>
+    <p id="description">
+      Share your background, expertise, and interests in technology
+    </p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Full Name
+          <input id="name" type="text" required placeholder="Your full name"
+        /></label>
+        <label id="email-label" for="email"
+          >Professional Email
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Enter your email"
+        /></label>
+        <label id="number-label" for="number"
+          >Years of Experience
+          <input id="number" type="number" min="0" max="50" placeholder="years"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Work Experience</legend>
+        <select id="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Web Development</option>
+          <option value="2">UI/UX Design</option>
+          <option value="3">Game Design & Mechanics</option>
+          <option value="4">Project Management</option>
+          <option value="5">Creative Technology (AR/VR)</option>
+        </select>
+
+        <label for="remote"
+          ><input
+            id="remote"
+            type="radio"
+            name="work-enviroment"
+            value="remote"
+            class="inline"
+          />
+          Remote
+        </label>
+        <label for="hybrid"
+          ><input
+            id="hybrid"
+            type="radio"
+            name="work-enviroment"
+            value="hybrid"
+            class="inline"
+          />
+          Hybrid
+        </label>
+        <label for="on-site"
+          ><input
+            id="on-site"
+            type="radio"
+            name="work-enviroment"
+            value="on-site"
+            class="inline"
+          />
+          On-site</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Least Experienced (optional)</legend>
+
+        <label for="web-dev">
+          <input
+            id="web-dev"
+            type="checkbox"
+            name="area-no-experience"
+            value="web-development"
+            class="inline"
+          />
+          Web Development
+        </label>
+        <label for="UI/UX">
+          <input
+            id="UI/UX"
+            type="checkbox"
+            name="area-no-experience"
+            value="ui-ux-design"
+            class="inline"
+          />
+          UI/UX Design
+        </label>
+        <label for="game-design">
+          <input
+            id="game-design"
+            type="checkbox"
+            name="area-no-experience"
+            value="Game design-mechanics"
+            class="inline"
+          />
+          Game Design & Mechanics
+        </label>
+        <label for="p-management">
+          <input
+            id="p-management"
+            type="checkbox"
+            name="area-no-experience"
+            value="project-management"
+            class="inline"
+          />
+          Project Management
+        </label>
+        <label for="creative-tech">
+          <input
+            id="creative-tech"
+            type="checkbox"
+            name="area-no-experience"
+            value="creative-technology"
+            class="inline"
+          />
+          Creative Technology (AR/VR)
+        </label>
+
+        <label for="comment">Additional Comments</label>
+        <textarea
+          id="comment"
+          name="comment"
+          rows="5"
+          cols="50"
+          placeholder="Enter any additional comments here"
+        ></textarea>
+      </fieldset>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
